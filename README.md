@@ -3,8 +3,6 @@ WIP
 This project is a *work in progress*. The implementation is *incomplete* and
 subject to change. The documentation can be inaccurate.
 
-![Reason intro](https://github.com/karlek/reason/blob/master/logo.png?raw=true)
-
 catamp
 ======
 Catamp is a music player and visualizer for FLAC files. The name is an homage to Winamp.
