@@ -28,13 +28,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Sirupsen/logrus"
-	"github.com/karlek/profile"
 	"github.com/llgcode/draw2d/draw2dbase"
 	"github.com/mesilliac/pulse-simple"
 	"github.com/mewkiz/flac"
 	"github.com/mewmew/sdl/win"
 	"github.com/mewmew/we"
+	"github.com/pkg/profile"
+	"github.com/sirupsen/logrus"
 )
 
 var (
@@ -122,7 +122,7 @@ func catamp(filename string) (err error) {
 				os.Stdin.Read(b)
 				if b[0] == 'n' && stream != nil {
 					close(quit)
-					stream.Seek(0, io.SeekEnd)
+					//stream.Seek(0, io.SeekEnd)
 					return
 				}
 			}
